@@ -84,7 +84,7 @@
             this.BtnRefreshRestockProduct.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.BtnRefreshRestockProduct.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnRefreshRestockProduct.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BtnRefreshRestockProduct.Location = new System.Drawing.Point(757, 24);
+            this.BtnRefreshRestockProduct.Location = new System.Drawing.Point(756, 24);
             this.BtnRefreshRestockProduct.Name = "BtnRefreshRestockProduct";
             this.BtnRefreshRestockProduct.Rounded = false;
             this.BtnRefreshRestockProduct.Size = new System.Drawing.Size(90, 30);
@@ -99,7 +99,7 @@
             this.BtnSearchRestockProduct.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.BtnSearchRestockProduct.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnSearchRestockProduct.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BtnSearchRestockProduct.Location = new System.Drawing.Point(652, 24);
+            this.BtnSearchRestockProduct.Location = new System.Drawing.Point(640, 24);
             this.BtnSearchRestockProduct.Name = "BtnSearchRestockProduct";
             this.BtnSearchRestockProduct.Rounded = false;
             this.BtnSearchRestockProduct.Size = new System.Drawing.Size(90, 30);
@@ -253,7 +253,7 @@
             this.BtnClearRestockProduct.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.BtnClearRestockProduct.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnClearRestockProduct.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BtnClearRestockProduct.Location = new System.Drawing.Point(386, 32);
+            this.BtnClearRestockProduct.Location = new System.Drawing.Point(385, 32);
             this.BtnClearRestockProduct.Name = "BtnClearRestockProduct";
             this.BtnClearRestockProduct.Rounded = false;
             this.BtnClearRestockProduct.Size = new System.Drawing.Size(90, 40);
@@ -268,7 +268,7 @@
             this.BtnDeleteRestockProduct.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.BtnDeleteRestockProduct.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnDeleteRestockProduct.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BtnDeleteRestockProduct.Location = new System.Drawing.Point(263, 32);
+            this.BtnDeleteRestockProduct.Location = new System.Drawing.Point(267, 32);
             this.BtnDeleteRestockProduct.Name = "BtnDeleteRestockProduct";
             this.BtnDeleteRestockProduct.Rounded = false;
             this.BtnDeleteRestockProduct.Size = new System.Drawing.Size(90, 40);
@@ -283,7 +283,7 @@
             this.BtnUpdateRestockProduct.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.BtnUpdateRestockProduct.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnUpdateRestockProduct.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BtnUpdateRestockProduct.Location = new System.Drawing.Point(145, 32);
+            this.BtnUpdateRestockProduct.Location = new System.Drawing.Point(149, 32);
             this.BtnUpdateRestockProduct.Name = "BtnUpdateRestockProduct";
             this.BtnUpdateRestockProduct.Rounded = false;
             this.BtnUpdateRestockProduct.Size = new System.Drawing.Size(90, 40);
@@ -309,6 +309,7 @@
             // 
             // GridRestockProduct
             // 
+            this.GridRestockProduct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.GridRestockProduct.BackgroundColor = System.Drawing.SystemColors.Control;
             this.GridRestockProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridRestockProduct.Dock = System.Windows.Forms.DockStyle.Fill;

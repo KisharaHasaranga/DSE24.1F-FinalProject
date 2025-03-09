@@ -34,6 +34,7 @@
             this.BtnDelete = new ReaLTaiizor.Controls.ForeverButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.DateExpire = new System.Windows.Forms.DateTimePicker();
             this.DateManufacture = new System.Windows.Forms.DateTimePicker();
             this.BoxBatchNo = new System.Windows.Forms.TextBox();
@@ -56,6 +57,7 @@
             this.GridProduct = new System.Windows.Forms.DataGridView();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridProduct)).BeginInit();
             this.SuspendLayout();
@@ -66,7 +68,7 @@
             this.BtnClear.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.BtnClear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnClear.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BtnClear.Location = new System.Drawing.Point(386, 32);
+            this.BtnClear.Location = new System.Drawing.Point(385, 32);
             this.BtnClear.Name = "BtnClear";
             this.BtnClear.Rounded = false;
             this.BtnClear.Size = new System.Drawing.Size(90, 40);
@@ -96,7 +98,7 @@
             this.BtnUpdate.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.BtnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnUpdate.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BtnUpdate.Location = new System.Drawing.Point(145, 32);
+            this.BtnUpdate.Location = new System.Drawing.Point(149, 32);
             this.BtnUpdate.Name = "BtnUpdate";
             this.BtnUpdate.Rounded = false;
             this.BtnUpdate.Size = new System.Drawing.Size(90, 40);
@@ -111,7 +113,7 @@
             this.BtnDelete.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.BtnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnDelete.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BtnDelete.Location = new System.Drawing.Point(263, 32);
+            this.BtnDelete.Location = new System.Drawing.Point(267, 32);
             this.BtnDelete.Name = "BtnDelete";
             this.BtnDelete.Rounded = false;
             this.BtnDelete.Size = new System.Drawing.Size(90, 40);
@@ -136,152 +138,164 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-            this.panel2.Controls.Add(this.DateExpire);
-            this.panel2.Controls.Add(this.DateManufacture);
-            this.panel2.Controls.Add(this.BoxBatchNo);
-            this.panel2.Controls.Add(this.BoxUnitPrice);
-            this.panel2.Controls.Add(this.BoxProductQty);
-            this.panel2.Controls.Add(this.BoxProductId);
-            this.panel2.Controls.Add(this.BoxProductName);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.panel4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 66);
             this.panel2.Name = "panel2";
+            this.panel2.Padding = new System.Windows.Forms.Padding(10);
             this.panel2.Size = new System.Drawing.Size(424, 684);
             this.panel2.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
+            this.panel4.Controls.Add(this.DateExpire);
+            this.panel4.Controls.Add(this.DateManufacture);
+            this.panel4.Controls.Add(this.BoxBatchNo);
+            this.panel4.Controls.Add(this.BoxUnitPrice);
+            this.panel4.Controls.Add(this.BoxProductQty);
+            this.panel4.Controls.Add(this.BoxProductId);
+            this.panel4.Controls.Add(this.BoxProductName);
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(10, 10);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(404, 358);
+            this.panel4.TabIndex = 0;
             // 
             // DateExpire
             // 
             this.DateExpire.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DateExpire.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DateExpire.Location = new System.Drawing.Point(218, 335);
+            this.DateExpire.Location = new System.Drawing.Point(210, 313);
             this.DateExpire.Name = "DateExpire";
             this.DateExpire.Size = new System.Drawing.Size(187, 26);
-            this.DateExpire.TabIndex = 6;
+            this.DateExpire.TabIndex = 19;
             // 
             // DateManufacture
             // 
             this.DateManufacture.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DateManufacture.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DateManufacture.Location = new System.Drawing.Point(218, 287);
+            this.DateManufacture.Location = new System.Drawing.Point(210, 265);
             this.DateManufacture.Name = "DateManufacture";
             this.DateManufacture.Size = new System.Drawing.Size(187, 26);
-            this.DateManufacture.TabIndex = 6;
+            this.DateManufacture.TabIndex = 20;
             // 
             // BoxBatchNo
             // 
             this.BoxBatchNo.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxBatchNo.Location = new System.Drawing.Point(218, 236);
+            this.BoxBatchNo.Location = new System.Drawing.Point(210, 214);
             this.BoxBatchNo.Name = "BoxBatchNo";
             this.BoxBatchNo.Size = new System.Drawing.Size(187, 30);
-            this.BoxBatchNo.TabIndex = 4;
+            this.BoxBatchNo.TabIndex = 14;
             // 
             // BoxUnitPrice
             // 
             this.BoxUnitPrice.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxUnitPrice.Location = new System.Drawing.Point(218, 185);
+            this.BoxUnitPrice.Location = new System.Drawing.Point(210, 163);
             this.BoxUnitPrice.Name = "BoxUnitPrice";
             this.BoxUnitPrice.Size = new System.Drawing.Size(187, 30);
-            this.BoxUnitPrice.TabIndex = 4;
+            this.BoxUnitPrice.TabIndex = 15;
             // 
             // BoxProductQty
             // 
             this.BoxProductQty.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxProductQty.Location = new System.Drawing.Point(218, 132);
+            this.BoxProductQty.Location = new System.Drawing.Point(210, 110);
             this.BoxProductQty.Name = "BoxProductQty";
             this.BoxProductQty.Size = new System.Drawing.Size(187, 30);
-            this.BoxProductQty.TabIndex = 4;
+            this.BoxProductQty.TabIndex = 16;
             // 
             // BoxProductId
             // 
             this.BoxProductId.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxProductId.Location = new System.Drawing.Point(218, 43);
+            this.BoxProductId.Location = new System.Drawing.Point(210, 21);
             this.BoxProductId.Name = "BoxProductId";
+            this.BoxProductId.ReadOnly = true;
             this.BoxProductId.Size = new System.Drawing.Size(187, 30);
-            this.BoxProductId.TabIndex = 4;
+            this.BoxProductId.TabIndex = 17;
             // 
             // BoxProductName
             // 
             this.BoxProductName.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxProductName.Location = new System.Drawing.Point(218, 87);
+            this.BoxProductName.Location = new System.Drawing.Point(210, 65);
             this.BoxProductName.Name = "BoxProductName";
             this.BoxProductName.Size = new System.Drawing.Size(187, 30);
-            this.BoxProductName.TabIndex = 4;
+            this.BoxProductName.TabIndex = 18;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(19, 192);
+            this.label5.Location = new System.Drawing.Point(11, 170);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(96, 23);
-            this.label5.TabIndex = 3;
+            this.label5.TabIndex = 7;
             this.label5.Text = "Unit Price:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(22, 338);
+            this.label7.Location = new System.Drawing.Point(14, 316);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(110, 23);
-            this.label7.TabIndex = 3;
+            this.label7.TabIndex = 8;
             this.label7.Text = "Expire Date:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(22, 290);
+            this.label6.Location = new System.Drawing.Point(14, 268);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(164, 23);
-            this.label6.TabIndex = 3;
+            this.label6.TabIndex = 9;
             this.label6.Text = "Manufacture Date:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(22, 243);
+            this.label4.Location = new System.Drawing.Point(14, 221);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 23);
-            this.label4.TabIndex = 3;
+            this.label4.TabIndex = 10;
             this.label4.Text = "Batch No:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(19, 139);
+            this.label3.Location = new System.Drawing.Point(11, 117);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 23);
-            this.label3.TabIndex = 3;
+            this.label3.TabIndex = 11;
             this.label3.Text = "Qty:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(19, 94);
+            this.label2.Location = new System.Drawing.Point(11, 72);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 23);
-            this.label2.TabIndex = 3;
+            this.label2.TabIndex = 12;
             this.label2.Text = "Name:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(19, 46);
+            this.label1.Location = new System.Drawing.Point(11, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(102, 23);
-            this.label1.TabIndex = 3;
+            this.label1.TabIndex = 13;
             this.label1.Text = "Product Id:";
             // 
             // panel1
@@ -311,7 +325,7 @@
             this.BtnRefresh.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.BtnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnRefresh.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BtnRefresh.Location = new System.Drawing.Point(757, 24);
+            this.BtnRefresh.Location = new System.Drawing.Point(756, 24);
             this.BtnRefresh.Name = "BtnRefresh";
             this.BtnRefresh.Rounded = false;
             this.BtnRefresh.Size = new System.Drawing.Size(90, 30);
@@ -326,7 +340,7 @@
             this.BtnSearch.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.BtnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnSearch.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BtnSearch.Location = new System.Drawing.Point(652, 24);
+            this.BtnSearch.Location = new System.Drawing.Point(640, 24);
             this.BtnSearch.Name = "BtnSearch";
             this.BtnSearch.Rounded = false;
             this.BtnSearch.Size = new System.Drawing.Size(90, 30);
@@ -373,7 +387,8 @@
             this.Load += new System.EventHandler(this.AdminItemsForm_Load);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridProduct)).EndInit();
@@ -389,25 +404,26 @@
         private ReaLTaiizor.Controls.ForeverButton BtnDelete;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox BoxProductName;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker DateManufacture;
-        private System.Windows.Forms.TextBox BoxBatchNo;
-        private System.Windows.Forms.TextBox BoxUnitPrice;
-        private System.Windows.Forms.TextBox BoxProductQty;
-        private System.Windows.Forms.DateTimePicker DateExpire;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox BoxProductSearch;
         private ReaLTaiizor.Controls.ForeverButton BtnSearch;
         private System.Windows.Forms.DataGridView GridProduct;
         private ReaLTaiizor.Controls.ForeverButton BtnRefresh;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.DateTimePicker DateExpire;
+        private System.Windows.Forms.DateTimePicker DateManufacture;
+        private System.Windows.Forms.TextBox BoxBatchNo;
+        private System.Windows.Forms.TextBox BoxUnitPrice;
+        private System.Windows.Forms.TextBox BoxProductQty;
         private System.Windows.Forms.TextBox BoxProductId;
+        private System.Windows.Forms.TextBox BoxProductName;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

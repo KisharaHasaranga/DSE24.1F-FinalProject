@@ -148,6 +148,7 @@ namespace FinalProject
                     MessageBox.Show("Insert Succesfull", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LoadGrid();
                     Clear();
+                    LoadLeaveRequestId();
                 }
                 catch (Exception exception)
                 {
@@ -174,6 +175,8 @@ namespace FinalProject
                     con.Close();
                     MessageBox.Show("Leave Request successfully cancelled", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Clear();
+                    LoadLeaveRequestId();
+                    LoadGrid();
                 }
                 catch (Exception exception)
                 {

@@ -35,10 +35,10 @@
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.BoxLeaveReqId = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.BoxLeaveReqId = new System.Windows.Forms.TextBox();
             this.CBoxStatus = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.BtnClearRestockRequest = new ReaLTaiizor.Controls.ForeverButton();
             this.BtnUpdateRestockRequest = new ReaLTaiizor.Controls.ForeverButton();
@@ -135,25 +135,6 @@
             this.panel5.Size = new System.Drawing.Size(404, 136);
             this.panel5.TabIndex = 9;
             // 
-            // BoxLeaveReqId
-            // 
-            this.BoxLeaveReqId.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxLeaveReqId.Location = new System.Drawing.Point(206, 25);
-            this.BoxLeaveReqId.Name = "BoxLeaveReqId";
-            this.BoxLeaveReqId.ReadOnly = true;
-            this.BoxLeaveReqId.Size = new System.Drawing.Size(187, 30);
-            this.BoxLeaveReqId.TabIndex = 4;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(7, 28);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(159, 23);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Leave Request Id:";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -163,6 +144,15 @@
             this.label2.Size = new System.Drawing.Size(68, 23);
             this.label2.TabIndex = 3;
             this.label2.Text = "Status:";
+            // 
+            // BoxLeaveReqId
+            // 
+            this.BoxLeaveReqId.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxLeaveReqId.Location = new System.Drawing.Point(206, 25);
+            this.BoxLeaveReqId.Name = "BoxLeaveReqId";
+            this.BoxLeaveReqId.ReadOnly = true;
+            this.BoxLeaveReqId.Size = new System.Drawing.Size(187, 30);
+            this.BoxLeaveReqId.TabIndex = 4;
             // 
             // CBoxStatus
             // 
@@ -178,6 +168,16 @@
             this.CBoxStatus.Name = "CBoxStatus";
             this.CBoxStatus.Size = new System.Drawing.Size(187, 29);
             this.CBoxStatus.TabIndex = 7;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(7, 28);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(159, 23);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Leave Request Id:";
             // 
             // panel3
             // 
@@ -222,6 +222,7 @@
             // 
             // GridLeaveRequest
             // 
+            this.GridLeaveRequest.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.GridLeaveRequest.BackgroundColor = System.Drawing.SystemColors.Control;
             this.GridLeaveRequest.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridLeaveRequest.Dock = System.Windows.Forms.DockStyle.Fill;

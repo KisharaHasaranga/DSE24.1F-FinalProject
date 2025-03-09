@@ -291,6 +291,7 @@
             // 
             // GridDamagedProductRequest
             // 
+            this.GridDamagedProductRequest.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.GridDamagedProductRequest.BackgroundColor = System.Drawing.SystemColors.Control;
             this.GridDamagedProductRequest.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridDamagedProductRequest.Dock = System.Windows.Forms.DockStyle.Fill;

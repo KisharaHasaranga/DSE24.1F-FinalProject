@@ -92,7 +92,7 @@ namespace FinalProject
                         }
                         MessageBox.Show("Successfully Logged In.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        if (userType.Equals("Admin"))
+                        if (userType.Equals("Operation-Manager") || userType.Equals("Admin") || userType.Equals("Director"))
                         {
                             AdminDashboard adminDashboardForm = new AdminDashboard();
                             adminDashboardForm.Show();

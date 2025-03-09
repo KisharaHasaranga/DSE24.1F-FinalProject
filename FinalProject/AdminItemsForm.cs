@@ -43,7 +43,7 @@ namespace FinalProject
         // Check UserType
         private void CheckUserType()
         {
-            if (LoginForm.userType == "Admin" || LoginForm.userType == "Inventory Manager")
+            if (LoginForm.userType == "Admin" || LoginForm.userType == "Inventory Manager" || LoginForm.userType == "Director")
             {
                 BtnInsert.Enabled = true;
                 BtnUpdate.Enabled = true;
@@ -160,6 +160,13 @@ namespace FinalProject
                     con.Close();
                     MessageBox.Show("Insert Succesfull", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Clear();
+                    int nextStoreID = GetNextProductID();
+                    if (nextStoreID != -1)
+                    {
+                        BoxProductId.Text = nextStoreID.ToString();
+                    }
+                    LoadGrid();
+
                 }
                 catch (Exception exception)
                 {
@@ -197,6 +204,12 @@ namespace FinalProject
                     con.Close();
                     MessageBox.Show("Update Succesfull", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Clear();
+                    int nextStoreID = GetNextProductID();
+                    if (nextStoreID != -1)
+                    {
+                        BoxProductId.Text = nextStoreID.ToString();
+                    }
+                    LoadGrid();
                 }
                 catch (Exception exception)
                 {
@@ -221,6 +234,12 @@ namespace FinalProject
                     con.Close();
                     MessageBox.Show("Delete Succesfull", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Clear();
+                    int nextStoreID = GetNextProductID();
+                    if (nextStoreID != -1)
+                    {
+                        BoxProductId.Text = nextStoreID.ToString();
+                    }
+                    LoadGrid();
                 }
                 catch (Exception exception)
                 {

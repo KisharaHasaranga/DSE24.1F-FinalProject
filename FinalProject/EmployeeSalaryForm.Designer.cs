@@ -34,9 +34,16 @@
             this.BtnSearchSalary = new ReaLTaiizor.Controls.ForeverButton();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.BtnCalculateSalary = new ReaLTaiizor.Controls.ForeverButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.BtnClearSalary = new ReaLTaiizor.Controls.ForeverButton();
+            this.BtnDeleteSalary = new ReaLTaiizor.Controls.ForeverButton();
+            this.BtnUpdateSalary = new ReaLTaiizor.Controls.ForeverButton();
+            this.BtnInsertSalary = new ReaLTaiizor.Controls.ForeverButton();
+            this.GridSalary = new System.Windows.Forms.DataGridView();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.CBoxEmpId = new System.Windows.Forms.ComboBox();
             this.DateCreated = new System.Windows.Forms.DateTimePicker();
-            this.BtnCalculateSalary = new ReaLTaiizor.Controls.ForeverButton();
             this.BoxMinAmt = new System.Windows.Forms.TextBox();
             this.BoxTotalAmt = new System.Windows.Forms.TextBox();
             this.BoxBonus = new System.Windows.Forms.TextBox();
@@ -51,16 +58,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.BtnClearSalary = new ReaLTaiizor.Controls.ForeverButton();
-            this.BtnDeleteSalary = new ReaLTaiizor.Controls.ForeverButton();
-            this.BtnUpdateSalary = new ReaLTaiizor.Controls.ForeverButton();
-            this.BtnInsertSalary = new ReaLTaiizor.Controls.ForeverButton();
-            this.GridSalary = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridSalary)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -128,54 +130,14 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-            this.panel2.Controls.Add(this.CBoxEmpId);
-            this.panel2.Controls.Add(this.DateCreated);
+            this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.BtnCalculateSalary);
-            this.panel2.Controls.Add(this.BoxMinAmt);
-            this.panel2.Controls.Add(this.BoxTotalAmt);
-            this.panel2.Controls.Add(this.BoxBonus);
-            this.panel2.Controls.Add(this.BoxOT);
-            this.panel2.Controls.Add(this.BoxSalaryId);
-            this.panel2.Controls.Add(this.BoxEmpName);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 66);
             this.panel2.Name = "panel2";
+            this.panel2.Padding = new System.Windows.Forms.Padding(10);
             this.panel2.Size = new System.Drawing.Size(424, 684);
             this.panel2.TabIndex = 6;
-            // 
-            // CBoxEmpId
-            // 
-            this.CBoxEmpId.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBoxEmpId.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CBoxEmpId.FormattingEnabled = true;
-            this.CBoxEmpId.Items.AddRange(new object[] {
-            "Admin",
-            "SalesRep",
-            "Logistics-Coordinator",
-            "Driver",
-            "Inventorty Manager"});
-            this.CBoxEmpId.Location = new System.Drawing.Point(218, 69);
-            this.CBoxEmpId.Name = "CBoxEmpId";
-            this.CBoxEmpId.Size = new System.Drawing.Size(187, 29);
-            this.CBoxEmpId.TabIndex = 7;
-            this.CBoxEmpId.SelectedIndexChanged += new System.EventHandler(this.CBoxEmpId_SelectedIndexChanged);
-            // 
-            // DateCreated
-            // 
-            this.DateCreated.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateCreated.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DateCreated.Location = new System.Drawing.Point(218, 263);
-            this.DateCreated.Name = "DateCreated";
-            this.DateCreated.Size = new System.Drawing.Size(187, 26);
-            this.DateCreated.TabIndex = 6;
             // 
             // BtnCalculateSalary
             // 
@@ -183,7 +145,7 @@
             this.BtnCalculateSalary.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.BtnCalculateSalary.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnCalculateSalary.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BtnCalculateSalary.Location = new System.Drawing.Point(315, 406);
+            this.BtnCalculateSalary.Location = new System.Drawing.Point(324, 409);
             this.BtnCalculateSalary.Name = "BtnCalculateSalary";
             this.BtnCalculateSalary.Rounded = false;
             this.BtnCalculateSalary.Size = new System.Drawing.Size(90, 40);
@@ -191,138 +153,6 @@
             this.BtnCalculateSalary.Text = "Calculate";
             this.BtnCalculateSalary.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             this.BtnCalculateSalary.Click += new System.EventHandler(this.BtnCalculateSalary_Click);
-            // 
-            // BoxMinAmt
-            // 
-            this.BoxMinAmt.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxMinAmt.Location = new System.Drawing.Point(218, 305);
-            this.BoxMinAmt.Name = "BoxMinAmt";
-            this.BoxMinAmt.Size = new System.Drawing.Size(187, 30);
-            this.BoxMinAmt.TabIndex = 4;
-            // 
-            // BoxTotalAmt
-            // 
-            this.BoxTotalAmt.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxTotalAmt.Location = new System.Drawing.Point(218, 355);
-            this.BoxTotalAmt.Name = "BoxTotalAmt";
-            this.BoxTotalAmt.Size = new System.Drawing.Size(187, 30);
-            this.BoxTotalAmt.TabIndex = 4;
-            // 
-            // BoxBonus
-            // 
-            this.BoxBonus.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxBonus.Location = new System.Drawing.Point(218, 215);
-            this.BoxBonus.Name = "BoxBonus";
-            this.BoxBonus.Size = new System.Drawing.Size(187, 30);
-            this.BoxBonus.TabIndex = 4;
-            this.BoxBonus.Text = "0";
-            // 
-            // BoxOT
-            // 
-            this.BoxOT.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxOT.Location = new System.Drawing.Point(218, 167);
-            this.BoxOT.Name = "BoxOT";
-            this.BoxOT.Size = new System.Drawing.Size(187, 30);
-            this.BoxOT.TabIndex = 4;
-            this.BoxOT.Text = "0";
-            // 
-            // BoxSalaryId
-            // 
-            this.BoxSalaryId.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxSalaryId.Location = new System.Drawing.Point(218, 24);
-            this.BoxSalaryId.Name = "BoxSalaryId";
-            this.BoxSalaryId.ReadOnly = true;
-            this.BoxSalaryId.Size = new System.Drawing.Size(187, 30);
-            this.BoxSalaryId.TabIndex = 4;
-            // 
-            // BoxEmpName
-            // 
-            this.BoxEmpName.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxEmpName.Location = new System.Drawing.Point(218, 116);
-            this.BoxEmpName.Name = "BoxEmpName";
-            this.BoxEmpName.ReadOnly = true;
-            this.BoxEmpName.Size = new System.Drawing.Size(187, 30);
-            this.BoxEmpName.TabIndex = 4;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(19, 218);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 23);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Bonus:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(19, 312);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(177, 23);
-            this.label9.TabIndex = 3;
-            this.label9.Text = "Mininmum Amount:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(19, 266);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 23);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Date:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(19, 362);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(128, 23);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Total Amount:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(19, 174);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(95, 23);
-            this.label11.TabIndex = 3;
-            this.label11.Text = "OT Hours:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(19, 27);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 23);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Salary Id:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(19, 123);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(155, 23);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Employee Name:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(19, 75);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 23);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Employee Id:";
             // 
             // panel3
             // 
@@ -399,6 +229,7 @@
             // 
             // GridSalary
             // 
+            this.GridSalary.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.GridSalary.BackgroundColor = System.Drawing.SystemColors.Control;
             this.GridSalary.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridSalary.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -407,6 +238,188 @@
             this.GridSalary.Size = new System.Drawing.Size(801, 591);
             this.GridSalary.TabIndex = 8;
             this.GridSalary.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridSalary_CellClick);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
+            this.panel4.Controls.Add(this.CBoxEmpId);
+            this.panel4.Controls.Add(this.DateCreated);
+            this.panel4.Controls.Add(this.BoxMinAmt);
+            this.panel4.Controls.Add(this.BoxTotalAmt);
+            this.panel4.Controls.Add(this.BoxBonus);
+            this.panel4.Controls.Add(this.BoxOT);
+            this.panel4.Controls.Add(this.BoxSalaryId);
+            this.panel4.Controls.Add(this.BoxEmpName);
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.label9);
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.label11);
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(10, 10);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(404, 390);
+            this.panel4.TabIndex = 8;
+            // 
+            // CBoxEmpId
+            // 
+            this.CBoxEmpId.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBoxEmpId.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CBoxEmpId.FormattingEnabled = true;
+            this.CBoxEmpId.Items.AddRange(new object[] {
+            "Admin",
+            "SalesRep",
+            "Logistics-Coordinator",
+            "Driver",
+            "Inventorty Manager"});
+            this.CBoxEmpId.Location = new System.Drawing.Point(208, 59);
+            this.CBoxEmpId.Name = "CBoxEmpId";
+            this.CBoxEmpId.Size = new System.Drawing.Size(187, 29);
+            this.CBoxEmpId.TabIndex = 23;
+            // 
+            // DateCreated
+            // 
+            this.DateCreated.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateCreated.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DateCreated.Location = new System.Drawing.Point(208, 253);
+            this.DateCreated.Name = "DateCreated";
+            this.DateCreated.Size = new System.Drawing.Size(187, 26);
+            this.DateCreated.TabIndex = 22;
+            // 
+            // BoxMinAmt
+            // 
+            this.BoxMinAmt.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxMinAmt.Location = new System.Drawing.Point(208, 295);
+            this.BoxMinAmt.Name = "BoxMinAmt";
+            this.BoxMinAmt.Size = new System.Drawing.Size(187, 30);
+            this.BoxMinAmt.TabIndex = 16;
+            // 
+            // BoxTotalAmt
+            // 
+            this.BoxTotalAmt.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxTotalAmt.Location = new System.Drawing.Point(208, 345);
+            this.BoxTotalAmt.Name = "BoxTotalAmt";
+            this.BoxTotalAmt.Size = new System.Drawing.Size(187, 30);
+            this.BoxTotalAmt.TabIndex = 17;
+            // 
+            // BoxBonus
+            // 
+            this.BoxBonus.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxBonus.Location = new System.Drawing.Point(208, 205);
+            this.BoxBonus.Name = "BoxBonus";
+            this.BoxBonus.Size = new System.Drawing.Size(187, 30);
+            this.BoxBonus.TabIndex = 18;
+            this.BoxBonus.Text = "0";
+            // 
+            // BoxOT
+            // 
+            this.BoxOT.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxOT.Location = new System.Drawing.Point(208, 157);
+            this.BoxOT.Name = "BoxOT";
+            this.BoxOT.Size = new System.Drawing.Size(187, 30);
+            this.BoxOT.TabIndex = 19;
+            this.BoxOT.Text = "0";
+            // 
+            // BoxSalaryId
+            // 
+            this.BoxSalaryId.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxSalaryId.Location = new System.Drawing.Point(208, 14);
+            this.BoxSalaryId.Name = "BoxSalaryId";
+            this.BoxSalaryId.ReadOnly = true;
+            this.BoxSalaryId.Size = new System.Drawing.Size(187, 30);
+            this.BoxSalaryId.TabIndex = 20;
+            // 
+            // BoxEmpName
+            // 
+            this.BoxEmpName.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxEmpName.Location = new System.Drawing.Point(208, 106);
+            this.BoxEmpName.Name = "BoxEmpName";
+            this.BoxEmpName.ReadOnly = true;
+            this.BoxEmpName.Size = new System.Drawing.Size(187, 30);
+            this.BoxEmpName.TabIndex = 21;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(9, 208);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 23);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Bonus:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(9, 302);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(177, 23);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "Mininmum Amount:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(9, 256);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(53, 23);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "Date:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(9, 352);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(128, 23);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Total Amount:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(9, 164);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(95, 23);
+            this.label11.TabIndex = 12;
+            this.label11.Text = "OT Hours:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(9, 17);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(87, 23);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Salary Id:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(9, 113);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(155, 23);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Employee Name:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(9, 65);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(120, 23);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Employee Id:";
             // 
             // EmployeeSalaryForm
             // 
@@ -424,9 +437,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GridSalary)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -439,28 +453,29 @@
         private ReaLTaiizor.Controls.ForeverButton BtnSearchSalary;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DateTimePicker DateCreated;
-        private System.Windows.Forms.TextBox BoxTotalAmt;
-        private System.Windows.Forms.TextBox BoxBonus;
-        private System.Windows.Forms.TextBox BoxOT;
-        private System.Windows.Forms.TextBox BoxEmpName;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private ReaLTaiizor.Controls.ForeverButton BtnClearSalary;
         private ReaLTaiizor.Controls.ForeverButton BtnDeleteSalary;
         private ReaLTaiizor.Controls.ForeverButton BtnUpdateSalary;
         private ReaLTaiizor.Controls.ForeverButton BtnInsertSalary;
         private System.Windows.Forms.DataGridView GridSalary;
-        private System.Windows.Forms.ComboBox CBoxEmpId;
-        private System.Windows.Forms.TextBox BoxMinAmt;
-        private System.Windows.Forms.Label label9;
         private ReaLTaiizor.Controls.ForeverButton BtnCalculateSalary;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.ComboBox CBoxEmpId;
+        private System.Windows.Forms.DateTimePicker DateCreated;
+        private System.Windows.Forms.TextBox BoxMinAmt;
+        private System.Windows.Forms.TextBox BoxTotalAmt;
+        private System.Windows.Forms.TextBox BoxBonus;
+        private System.Windows.Forms.TextBox BoxOT;
         private System.Windows.Forms.TextBox BoxSalaryId;
+        private System.Windows.Forms.TextBox BoxEmpName;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

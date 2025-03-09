@@ -375,6 +375,7 @@
             // 
             // GridLeaveRequest
             // 
+            this.GridLeaveRequest.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.GridLeaveRequest.BackgroundColor = System.Drawing.SystemColors.Control;
             this.GridLeaveRequest.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridLeaveRequest.Dock = System.Windows.Forms.DockStyle.Fill;

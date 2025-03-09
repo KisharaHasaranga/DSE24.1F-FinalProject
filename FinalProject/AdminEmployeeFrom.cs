@@ -259,6 +259,7 @@ namespace FinalProject
                         MessageBox.Show("Insert Succesfull", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Clear();
                         LoadGrid();
+                        LoadEmpID();
                     }
                 }
                 catch (Exception exception)
@@ -337,6 +338,7 @@ namespace FinalProject
                         MessageBox.Show("Update Succesfull", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Clear();
                         LoadGrid();
+                        LoadEmpID();
                     }
                 }
                 catch (Exception exception)
@@ -363,6 +365,7 @@ namespace FinalProject
                     MessageBox.Show("Delete Succesfull", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Clear();
                     LoadGrid();
+                    LoadEmpID();    
                 }
                 catch (Exception exception)
                 {

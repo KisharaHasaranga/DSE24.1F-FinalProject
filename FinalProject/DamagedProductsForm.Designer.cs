@@ -45,17 +45,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.BtnClearDmgProduct = new ReaLTaiizor.Controls.ForeverButton();
-            this.BtnInsertDmgProduct = new ReaLTaiizor.Controls.ForeverButton();
-            this.GridDamagedProducts = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.foreverButton1 = new ReaLTaiizor.Controls.ForeverButton();
             this.foreverButton2 = new ReaLTaiizor.Controls.ForeverButton();
+            this.BtnClearDmgProduct = new ReaLTaiizor.Controls.ForeverButton();
+            this.BtnInsertDmgProduct = new ReaLTaiizor.Controls.ForeverButton();
+            this.GridDamagedProducts = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GridDamagedProducts)).BeginInit();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GridDamagedProducts)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -254,46 +254,6 @@
             this.panel3.Size = new System.Drawing.Size(801, 93);
             this.panel3.TabIndex = 8;
             // 
-            // BtnClearDmgProduct
-            // 
-            this.BtnClearDmgProduct.BackColor = System.Drawing.Color.Transparent;
-            this.BtnClearDmgProduct.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.BtnClearDmgProduct.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnClearDmgProduct.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BtnClearDmgProduct.Location = new System.Drawing.Point(151, 32);
-            this.BtnClearDmgProduct.Name = "BtnClearDmgProduct";
-            this.BtnClearDmgProduct.Rounded = false;
-            this.BtnClearDmgProduct.Size = new System.Drawing.Size(90, 40);
-            this.BtnClearDmgProduct.TabIndex = 7;
-            this.BtnClearDmgProduct.Text = "Clear";
-            this.BtnClearDmgProduct.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            this.BtnClearDmgProduct.Click += new System.EventHandler(this.BtnClearDmgProduct_Click);
-            // 
-            // BtnInsertDmgProduct
-            // 
-            this.BtnInsertDmgProduct.BackColor = System.Drawing.Color.Transparent;
-            this.BtnInsertDmgProduct.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.BtnInsertDmgProduct.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnInsertDmgProduct.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BtnInsertDmgProduct.Location = new System.Drawing.Point(31, 32);
-            this.BtnInsertDmgProduct.Name = "BtnInsertDmgProduct";
-            this.BtnInsertDmgProduct.Rounded = false;
-            this.BtnInsertDmgProduct.Size = new System.Drawing.Size(90, 40);
-            this.BtnInsertDmgProduct.TabIndex = 7;
-            this.BtnInsertDmgProduct.Text = "Insert";
-            this.BtnInsertDmgProduct.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            this.BtnInsertDmgProduct.Click += new System.EventHandler(this.BtnInsertDmgProduct_Click);
-            // 
-            // GridDamagedProducts
-            // 
-            this.GridDamagedProducts.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.GridDamagedProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridDamagedProducts.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GridDamagedProducts.Location = new System.Drawing.Point(424, 66);
-            this.GridDamagedProducts.Name = "GridDamagedProducts";
-            this.GridDamagedProducts.Size = new System.Drawing.Size(801, 591);
-            this.GridDamagedProducts.TabIndex = 9;
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
@@ -333,6 +293,47 @@
             this.foreverButton2.Text = "Insert";
             this.foreverButton2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             // 
+            // BtnClearDmgProduct
+            // 
+            this.BtnClearDmgProduct.BackColor = System.Drawing.Color.Transparent;
+            this.BtnClearDmgProduct.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.BtnClearDmgProduct.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnClearDmgProduct.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.BtnClearDmgProduct.Location = new System.Drawing.Point(151, 32);
+            this.BtnClearDmgProduct.Name = "BtnClearDmgProduct";
+            this.BtnClearDmgProduct.Rounded = false;
+            this.BtnClearDmgProduct.Size = new System.Drawing.Size(90, 40);
+            this.BtnClearDmgProduct.TabIndex = 7;
+            this.BtnClearDmgProduct.Text = "Clear";
+            this.BtnClearDmgProduct.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.BtnClearDmgProduct.Click += new System.EventHandler(this.BtnClearDmgProduct_Click);
+            // 
+            // BtnInsertDmgProduct
+            // 
+            this.BtnInsertDmgProduct.BackColor = System.Drawing.Color.Transparent;
+            this.BtnInsertDmgProduct.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.BtnInsertDmgProduct.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnInsertDmgProduct.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.BtnInsertDmgProduct.Location = new System.Drawing.Point(31, 32);
+            this.BtnInsertDmgProduct.Name = "BtnInsertDmgProduct";
+            this.BtnInsertDmgProduct.Rounded = false;
+            this.BtnInsertDmgProduct.Size = new System.Drawing.Size(90, 40);
+            this.BtnInsertDmgProduct.TabIndex = 7;
+            this.BtnInsertDmgProduct.Text = "Insert";
+            this.BtnInsertDmgProduct.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.BtnInsertDmgProduct.Click += new System.EventHandler(this.BtnInsertDmgProduct_Click);
+            // 
+            // GridDamagedProducts
+            // 
+            this.GridDamagedProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.GridDamagedProducts.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.GridDamagedProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GridDamagedProducts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GridDamagedProducts.Location = new System.Drawing.Point(424, 66);
+            this.GridDamagedProducts.Name = "GridDamagedProducts";
+            this.GridDamagedProducts.Size = new System.Drawing.Size(801, 591);
+            this.GridDamagedProducts.TabIndex = 9;
+            // 
             // DamagedProductsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -351,8 +352,8 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.GridDamagedProducts)).EndInit();
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.GridDamagedProducts)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -34,27 +34,27 @@
             this.BtnSearchRestockRequest = new ReaLTaiizor.Controls.ForeverButton();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.CBoxRestockProductId = new System.Windows.Forms.ComboBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.DateAdded = new System.Windows.Forms.DateTimePicker();
             this.BoxRestockRequestId = new System.Windows.Forms.TextBox();
-            this.BoxRestockStatus = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.CBoxRestockProductId = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.BoxRestockStatus = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.BtnClearRestockRequest = new ReaLTaiizor.Controls.ForeverButton();
             this.BtnDeleteRestockRequest = new ReaLTaiizor.Controls.ForeverButton();
             this.BtnInsertRestockRequest = new ReaLTaiizor.Controls.ForeverButton();
             this.GridRestockRequest = new System.Windows.Forms.DataGridView();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.DateAdded = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridRestockRequest)).BeginInit();
-            this.panel6.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -130,15 +130,29 @@
             this.panel2.Size = new System.Drawing.Size(424, 684);
             this.panel2.TabIndex = 9;
             // 
-            // CBoxRestockProductId
+            // panel5
             // 
-            this.CBoxRestockProductId.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBoxRestockProductId.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CBoxRestockProductId.FormattingEnabled = true;
-            this.CBoxRestockProductId.Location = new System.Drawing.Point(206, 71);
-            this.CBoxRestockProductId.Name = "CBoxRestockProductId";
-            this.CBoxRestockProductId.Size = new System.Drawing.Size(187, 29);
-            this.CBoxRestockProductId.TabIndex = 7;
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
+            this.panel5.Controls.Add(this.DateAdded);
+            this.panel5.Controls.Add(this.BoxRestockRequestId);
+            this.panel5.Controls.Add(this.label3);
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Controls.Add(this.CBoxRestockProductId);
+            this.panel5.Controls.Add(this.label6);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(10, 10);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(404, 158);
+            this.panel5.TabIndex = 9;
+            // 
+            // DateAdded
+            // 
+            this.DateAdded.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateAdded.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DateAdded.Location = new System.Drawing.Point(206, 120);
+            this.DateAdded.Name = "DateAdded";
+            this.DateAdded.Size = new System.Drawing.Size(187, 26);
+            this.DateAdded.TabIndex = 8;
             // 
             // BoxRestockRequestId
             // 
@@ -149,14 +163,35 @@
             this.BoxRestockRequestId.Size = new System.Drawing.Size(187, 30);
             this.BoxRestockRequestId.TabIndex = 4;
             // 
-            // BoxRestockStatus
+            // label3
             // 
-            this.BoxRestockStatus.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxRestockStatus.Location = new System.Drawing.Point(206, 21);
-            this.BoxRestockStatus.Name = "BoxRestockStatus";
-            this.BoxRestockStatus.ReadOnly = true;
-            this.BoxRestockStatus.Size = new System.Drawing.Size(187, 30);
-            this.BoxRestockStatus.TabIndex = 4;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(9, 123);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 23);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Date:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(7, 73);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(176, 23);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Restock Product Id:";
+            // 
+            // CBoxRestockProductId
+            // 
+            this.CBoxRestockProductId.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBoxRestockProductId.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CBoxRestockProductId.FormattingEnabled = true;
+            this.CBoxRestockProductId.Location = new System.Drawing.Point(206, 71);
+            this.CBoxRestockProductId.Name = "CBoxRestockProductId";
+            this.CBoxRestockProductId.Size = new System.Drawing.Size(187, 29);
+            this.CBoxRestockProductId.TabIndex = 7;
             // 
             // label6
             // 
@@ -168,6 +203,25 @@
             this.label6.TabIndex = 3;
             this.label6.Text = "Restock Request Id:";
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
+            this.panel6.Controls.Add(this.BoxRestockStatus);
+            this.panel6.Controls.Add(this.label2);
+            this.panel6.Location = new System.Drawing.Point(10, 179);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(404, 69);
+            this.panel6.TabIndex = 8;
+            // 
+            // BoxRestockStatus
+            // 
+            this.BoxRestockStatus.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxRestockStatus.Location = new System.Drawing.Point(206, 21);
+            this.BoxRestockStatus.Name = "BoxRestockStatus";
+            this.BoxRestockStatus.ReadOnly = true;
+            this.BoxRestockStatus.Size = new System.Drawing.Size(187, 30);
+            this.BoxRestockStatus.TabIndex = 4;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -177,16 +231,6 @@
             this.label2.Size = new System.Drawing.Size(68, 23);
             this.label2.TabIndex = 3;
             this.label2.Text = "Status:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(7, 73);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(176, 23);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Restock Product Id:";
             // 
             // panel3
             // 
@@ -247,6 +291,7 @@
             // 
             // GridRestockRequest
             // 
+            this.GridRestockRequest.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.GridRestockRequest.BackgroundColor = System.Drawing.SystemColors.Control;
             this.GridRestockRequest.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridRestockRequest.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -255,50 +300,6 @@
             this.GridRestockRequest.Size = new System.Drawing.Size(801, 591);
             this.GridRestockRequest.TabIndex = 13;
             this.GridRestockRequest.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridRestockRequest_CellClick);
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.panel6.Controls.Add(this.BoxRestockStatus);
-            this.panel6.Controls.Add(this.label2);
-            this.panel6.Location = new System.Drawing.Point(10, 179);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(404, 69);
-            this.panel6.TabIndex = 8;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.panel5.Controls.Add(this.DateAdded);
-            this.panel5.Controls.Add(this.BoxRestockRequestId);
-            this.panel5.Controls.Add(this.label3);
-            this.panel5.Controls.Add(this.label1);
-            this.panel5.Controls.Add(this.CBoxRestockProductId);
-            this.panel5.Controls.Add(this.label6);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(10, 10);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(404, 158);
-            this.panel5.TabIndex = 9;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 123);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 23);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Date:";
-            // 
-            // DateAdded
-            // 
-            this.DateAdded.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateAdded.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DateAdded.Location = new System.Drawing.Point(206, 120);
-            this.DateAdded.Name = "DateAdded";
-            this.DateAdded.Size = new System.Drawing.Size(187, 26);
-            this.DateAdded.TabIndex = 8;
             // 
             // RestockProductRequestsForm
             // 
@@ -316,12 +317,12 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.GridRestockRequest)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.GridRestockRequest)).EndInit();
             this.ResumeLayout(false);
 
         }

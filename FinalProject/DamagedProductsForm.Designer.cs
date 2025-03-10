@@ -51,11 +51,13 @@
             this.BtnClearDmgProduct = new ReaLTaiizor.Controls.ForeverButton();
             this.BtnInsertDmgProduct = new ReaLTaiizor.Controls.ForeverButton();
             this.GridDamagedProducts = new System.Windows.Forms.DataGridView();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridDamagedProducts)).BeginInit();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -123,19 +125,11 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-            this.panel2.Controls.Add(this.CBoxProductId);
-            this.panel2.Controls.Add(this.DateAdded);
-            this.panel2.Controls.Add(this.BoxQty);
-            this.panel2.Controls.Add(this.BoxDmgProductId);
-            this.panel2.Controls.Add(this.BoxProductName);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.panel5);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 66);
             this.panel2.Name = "panel2";
+            this.panel2.Padding = new System.Windows.Forms.Padding(10);
             this.panel2.Size = new System.Drawing.Size(424, 684);
             this.panel2.TabIndex = 7;
             // 
@@ -150,7 +144,7 @@
             "Logistics-Coordinator",
             "Driver",
             "Inventorty Manager"});
-            this.CBoxProductId.Location = new System.Drawing.Point(218, 89);
+            this.CBoxProductId.Location = new System.Drawing.Point(207, 73);
             this.CBoxProductId.Name = "CBoxProductId";
             this.CBoxProductId.Size = new System.Drawing.Size(187, 29);
             this.CBoxProductId.TabIndex = 7;
@@ -160,7 +154,7 @@
             // 
             this.DateAdded.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DateAdded.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DateAdded.Location = new System.Drawing.Point(218, 245);
+            this.DateAdded.Location = new System.Drawing.Point(207, 229);
             this.DateAdded.Name = "DateAdded";
             this.DateAdded.Size = new System.Drawing.Size(187, 26);
             this.DateAdded.TabIndex = 6;
@@ -168,7 +162,7 @@
             // BoxQty
             // 
             this.BoxQty.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxQty.Location = new System.Drawing.Point(218, 191);
+            this.BoxQty.Location = new System.Drawing.Point(207, 175);
             this.BoxQty.Name = "BoxQty";
             this.BoxQty.Size = new System.Drawing.Size(187, 30);
             this.BoxQty.TabIndex = 4;
@@ -177,7 +171,7 @@
             // BoxDmgProductId
             // 
             this.BoxDmgProductId.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxDmgProductId.Location = new System.Drawing.Point(218, 39);
+            this.BoxDmgProductId.Location = new System.Drawing.Point(207, 23);
             this.BoxDmgProductId.Name = "BoxDmgProductId";
             this.BoxDmgProductId.ReadOnly = true;
             this.BoxDmgProductId.Size = new System.Drawing.Size(187, 30);
@@ -186,7 +180,7 @@
             // BoxProductName
             // 
             this.BoxProductName.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxProductName.Location = new System.Drawing.Point(218, 138);
+            this.BoxProductName.Location = new System.Drawing.Point(207, 122);
             this.BoxProductName.Name = "BoxProductName";
             this.BoxProductName.ReadOnly = true;
             this.BoxProductName.Size = new System.Drawing.Size(187, 30);
@@ -196,7 +190,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(19, 248);
+            this.label7.Location = new System.Drawing.Point(8, 232);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(113, 23);
             this.label7.TabIndex = 3;
@@ -206,7 +200,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(19, 198);
+            this.label11.Location = new System.Drawing.Point(8, 182);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(114, 23);
             this.label11.TabIndex = 3;
@@ -216,7 +210,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(19, 42);
+            this.label6.Location = new System.Drawing.Point(8, 26);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(188, 23);
             this.label6.TabIndex = 3;
@@ -226,7 +220,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(19, 145);
+            this.label2.Location = new System.Drawing.Point(8, 129);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(137, 23);
             this.label2.TabIndex = 3;
@@ -236,7 +230,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(19, 95);
+            this.label1.Location = new System.Drawing.Point(8, 79);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(102, 23);
             this.label1.TabIndex = 3;
@@ -334,6 +328,25 @@
             this.GridDamagedProducts.Size = new System.Drawing.Size(801, 591);
             this.GridDamagedProducts.TabIndex = 9;
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
+            this.panel5.Controls.Add(this.BoxDmgProductId);
+            this.panel5.Controls.Add(this.CBoxProductId);
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Controls.Add(this.DateAdded);
+            this.panel5.Controls.Add(this.label2);
+            this.panel5.Controls.Add(this.BoxQty);
+            this.panel5.Controls.Add(this.label6);
+            this.panel5.Controls.Add(this.label11);
+            this.panel5.Controls.Add(this.BoxProductName);
+            this.panel5.Controls.Add(this.label7);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(10, 10);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(404, 281);
+            this.panel5.TabIndex = 10;
+            // 
             // DamagedProductsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -350,10 +363,11 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GridDamagedProducts)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -383,5 +397,6 @@
         private System.Windows.Forms.Panel panel4;
         private ReaLTaiizor.Controls.ForeverButton foreverButton1;
         private ReaLTaiizor.Controls.ForeverButton foreverButton2;
+        private System.Windows.Forms.Panel panel5;
     }
 }

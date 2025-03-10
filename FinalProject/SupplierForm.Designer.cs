@@ -50,10 +50,12 @@
             this.BtnUpdateSupplier = new ReaLTaiizor.Controls.ForeverButton();
             this.BtnInsertSupplier = new ReaLTaiizor.Controls.ForeverButton();
             this.GridSupplier = new System.Windows.Forms.DataGridView();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridSupplier)).BeginInit();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -120,26 +122,18 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-            this.panel2.Controls.Add(this.BoxSupplierId);
-            this.panel2.Controls.Add(this.BoxSupplierAddress);
-            this.panel2.Controls.Add(this.BoxSupplierEmail);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.BoxSupplierContact);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.BoxSupplierName);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.panel6);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 66);
             this.panel2.Name = "panel2";
+            this.panel2.Padding = new System.Windows.Forms.Padding(10);
             this.panel2.Size = new System.Drawing.Size(424, 684);
             this.panel2.TabIndex = 7;
             // 
             // BoxSupplierId
             // 
             this.BoxSupplierId.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxSupplierId.Location = new System.Drawing.Point(218, 24);
+            this.BoxSupplierId.Location = new System.Drawing.Point(210, 17);
             this.BoxSupplierId.Name = "BoxSupplierId";
             this.BoxSupplierId.ReadOnly = true;
             this.BoxSupplierId.Size = new System.Drawing.Size(187, 30);
@@ -148,7 +142,7 @@
             // BoxSupplierAddress
             // 
             this.BoxSupplierAddress.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxSupplierAddress.Location = new System.Drawing.Point(218, 218);
+            this.BoxSupplierAddress.Location = new System.Drawing.Point(210, 211);
             this.BoxSupplierAddress.Name = "BoxSupplierAddress";
             this.BoxSupplierAddress.Size = new System.Drawing.Size(187, 30);
             this.BoxSupplierAddress.TabIndex = 4;
@@ -156,7 +150,7 @@
             // BoxSupplierEmail
             // 
             this.BoxSupplierEmail.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxSupplierEmail.Location = new System.Drawing.Point(218, 169);
+            this.BoxSupplierEmail.Location = new System.Drawing.Point(210, 162);
             this.BoxSupplierEmail.Name = "BoxSupplierEmail";
             this.BoxSupplierEmail.Size = new System.Drawing.Size(187, 30);
             this.BoxSupplierEmail.TabIndex = 4;
@@ -165,7 +159,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(19, 225);
+            this.label4.Location = new System.Drawing.Point(11, 218);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(159, 23);
             this.label4.TabIndex = 3;
@@ -174,7 +168,7 @@
             // BoxSupplierContact
             // 
             this.BoxSupplierContact.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxSupplierContact.Location = new System.Drawing.Point(218, 120);
+            this.BoxSupplierContact.Location = new System.Drawing.Point(210, 113);
             this.BoxSupplierContact.Name = "BoxSupplierContact";
             this.BoxSupplierContact.Size = new System.Drawing.Size(187, 30);
             this.BoxSupplierContact.TabIndex = 4;
@@ -183,7 +177,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(19, 176);
+            this.label3.Location = new System.Drawing.Point(11, 169);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(137, 23);
             this.label3.TabIndex = 3;
@@ -192,7 +186,7 @@
             // BoxSupplierName
             // 
             this.BoxSupplierName.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxSupplierName.Location = new System.Drawing.Point(218, 73);
+            this.BoxSupplierName.Location = new System.Drawing.Point(210, 66);
             this.BoxSupplierName.Name = "BoxSupplierName";
             this.BoxSupplierName.Size = new System.Drawing.Size(187, 30);
             this.BoxSupplierName.TabIndex = 4;
@@ -201,7 +195,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(19, 127);
+            this.label1.Location = new System.Drawing.Point(11, 120);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(154, 23);
             this.label1.TabIndex = 3;
@@ -211,7 +205,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(19, 27);
+            this.label6.Location = new System.Drawing.Point(11, 20);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(105, 23);
             this.label6.TabIndex = 3;
@@ -221,7 +215,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(19, 80);
+            this.label2.Location = new System.Drawing.Point(11, 73);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(140, 23);
             this.label2.TabIndex = 3;
@@ -311,6 +305,25 @@
             this.GridSupplier.TabIndex = 9;
             this.GridSupplier.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridSupplier_CellClick);
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
+            this.panel6.Controls.Add(this.BoxSupplierAddress);
+            this.panel6.Controls.Add(this.BoxSupplierId);
+            this.panel6.Controls.Add(this.label2);
+            this.panel6.Controls.Add(this.label6);
+            this.panel6.Controls.Add(this.BoxSupplierEmail);
+            this.panel6.Controls.Add(this.label1);
+            this.panel6.Controls.Add(this.label4);
+            this.panel6.Controls.Add(this.BoxSupplierName);
+            this.panel6.Controls.Add(this.BoxSupplierContact);
+            this.panel6.Controls.Add(this.label3);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(10, 10);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(404, 256);
+            this.panel6.TabIndex = 10;
+            // 
             // SupplierForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -327,9 +340,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GridSupplier)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -358,5 +372,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView GridSupplier;
+        private System.Windows.Forms.Panel panel6;
     }
 }

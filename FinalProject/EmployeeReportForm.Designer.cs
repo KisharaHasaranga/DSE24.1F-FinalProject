@@ -30,13 +30,15 @@
         {
             this.EmpCrystalReportViewer = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.CBoxEmpId = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.BtnRefresh = new ReaLTaiizor.Controls.ForeverButton();
             this.BtnSearch = new ReaLTaiizor.Controls.ForeverButton();
+            this.CBoxEmpId = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // EmpCrystalReportViewer
@@ -64,50 +66,13 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-            this.panel1.Controls.Add(this.BtnRefresh);
-            this.panel1.Controls.Add(this.BtnSearch);
-            this.panel1.Controls.Add(this.CBoxEmpId);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.panel6);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
+            this.panel1.Padding = new System.Windows.Forms.Padding(10);
             this.panel1.Size = new System.Drawing.Size(1225, 67);
             this.panel1.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.EmpCrystalReportViewer);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 67);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1225, 683);
-            this.panel2.TabIndex = 2;
-            // 
-            // CBoxEmpId
-            // 
-            this.CBoxEmpId.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBoxEmpId.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CBoxEmpId.FormattingEnabled = true;
-            this.CBoxEmpId.Items.AddRange(new object[] {
-            "Admin",
-            "SalesRep",
-            "Logistics-Coordinator",
-            "Driver",
-            "Inventorty Manager"});
-            this.CBoxEmpId.Location = new System.Drawing.Point(169, 20);
-            this.CBoxEmpId.Name = "CBoxEmpId";
-            this.CBoxEmpId.Size = new System.Drawing.Size(187, 29);
-            this.CBoxEmpId.TabIndex = 9;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 23);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Employee Id:";
             // 
             // BtnRefresh
             // 
@@ -115,7 +80,7 @@
             this.BtnRefresh.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.BtnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnRefresh.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BtnRefresh.Location = new System.Drawing.Point(492, 19);
+            this.BtnRefresh.Location = new System.Drawing.Point(466, 9);
             this.BtnRefresh.Name = "BtnRefresh";
             this.BtnRefresh.Rounded = false;
             this.BtnRefresh.Size = new System.Drawing.Size(90, 30);
@@ -130,7 +95,7 @@
             this.BtnSearch.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.BtnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnSearch.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BtnSearch.Location = new System.Drawing.Point(379, 19);
+            this.BtnSearch.Location = new System.Drawing.Point(355, 9);
             this.BtnSearch.Name = "BtnSearch";
             this.BtnSearch.Rounded = false;
             this.BtnSearch.Size = new System.Drawing.Size(90, 30);
@@ -138,6 +103,54 @@
             this.BtnSearch.Text = "Search";
             this.BtnSearch.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             this.BtnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
+            // 
+            // CBoxEmpId
+            // 
+            this.CBoxEmpId.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBoxEmpId.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CBoxEmpId.FormattingEnabled = true;
+            this.CBoxEmpId.Items.AddRange(new object[] {
+            "Admin",
+            "SalesRep",
+            "Logistics-Coordinator",
+            "Driver",
+            "Inventorty Manager"});
+            this.CBoxEmpId.Location = new System.Drawing.Point(147, 10);
+            this.CBoxEmpId.Name = "CBoxEmpId";
+            this.CBoxEmpId.Size = new System.Drawing.Size(187, 29);
+            this.CBoxEmpId.TabIndex = 9;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(4, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(120, 23);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Employee Id:";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.EmpCrystalReportViewer);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 67);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1225, 683);
+            this.panel2.TabIndex = 2;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
+            this.panel6.Controls.Add(this.BtnSearch);
+            this.panel6.Controls.Add(this.BtnRefresh);
+            this.panel6.Controls.Add(this.label1);
+            this.panel6.Controls.Add(this.CBoxEmpId);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel6.Location = new System.Drawing.Point(10, 10);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(568, 47);
+            this.panel6.TabIndex = 12;
             // 
             // EmployeeReportForm
             // 
@@ -151,8 +164,9 @@
             this.Text = "EmployeeReportForm";
             this.Load += new System.EventHandler(this.EmployeeReportForm_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -166,5 +180,6 @@
         private System.Windows.Forms.Label label1;
         private ReaLTaiizor.Controls.ForeverButton BtnRefresh;
         private ReaLTaiizor.Controls.ForeverButton BtnSearch;
+        private System.Windows.Forms.Panel panel6;
     }
 }

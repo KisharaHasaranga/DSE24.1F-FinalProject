@@ -34,6 +34,7 @@
             this.BtnSearchRetailer = new ReaLTaiizor.Controls.ForeverButton();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.CBoxPriority = new System.Windows.Forms.ComboBox();
             this.BoxAddress = new System.Windows.Forms.TextBox();
             this.BoxEmail = new System.Windows.Forms.TextBox();
             this.BoxContact = new System.Windows.Forms.TextBox();
@@ -51,11 +52,12 @@
             this.BtnUpdateRetailer = new ReaLTaiizor.Controls.ForeverButton();
             this.BtnInsertRetailer = new ReaLTaiizor.Controls.ForeverButton();
             this.GridRetailer = new System.Windows.Forms.DataGridView();
-            this.CBoxPriority = new System.Windows.Forms.ComboBox();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridRetailer)).BeginInit();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -122,28 +124,32 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-            this.panel2.Controls.Add(this.CBoxPriority);
-            this.panel2.Controls.Add(this.BoxAddress);
-            this.panel2.Controls.Add(this.BoxEmail);
-            this.panel2.Controls.Add(this.BoxContact);
-            this.panel2.Controls.Add(this.BoxRetailerId);
-            this.panel2.Controls.Add(this.BoxRetailerName);
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.panel6);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 66);
             this.panel2.Name = "panel2";
+            this.panel2.Padding = new System.Windows.Forms.Padding(10);
             this.panel2.Size = new System.Drawing.Size(424, 684);
             this.panel2.TabIndex = 6;
+            // 
+            // CBoxPriority
+            // 
+            this.CBoxPriority.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBoxPriority.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CBoxPriority.FormattingEnabled = true;
+            this.CBoxPriority.Items.AddRange(new object[] {
+            "High",
+            "Normal",
+            "Low"});
+            this.CBoxPriority.Location = new System.Drawing.Point(208, 264);
+            this.CBoxPriority.Name = "CBoxPriority";
+            this.CBoxPriority.Size = new System.Drawing.Size(187, 29);
+            this.CBoxPriority.TabIndex = 8;
             // 
             // BoxAddress
             // 
             this.BoxAddress.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxAddress.Location = new System.Drawing.Point(218, 235);
+            this.BoxAddress.Location = new System.Drawing.Point(208, 215);
             this.BoxAddress.Name = "BoxAddress";
             this.BoxAddress.Size = new System.Drawing.Size(187, 30);
             this.BoxAddress.TabIndex = 4;
@@ -151,7 +157,7 @@
             // BoxEmail
             // 
             this.BoxEmail.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxEmail.Location = new System.Drawing.Point(218, 187);
+            this.BoxEmail.Location = new System.Drawing.Point(208, 167);
             this.BoxEmail.Name = "BoxEmail";
             this.BoxEmail.Size = new System.Drawing.Size(187, 30);
             this.BoxEmail.TabIndex = 4;
@@ -159,7 +165,7 @@
             // BoxContact
             // 
             this.BoxContact.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxContact.Location = new System.Drawing.Point(218, 138);
+            this.BoxContact.Location = new System.Drawing.Point(208, 118);
             this.BoxContact.Name = "BoxContact";
             this.BoxContact.Size = new System.Drawing.Size(187, 30);
             this.BoxContact.TabIndex = 4;
@@ -167,7 +173,7 @@
             // BoxRetailerId
             // 
             this.BoxRetailerId.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxRetailerId.Location = new System.Drawing.Point(218, 43);
+            this.BoxRetailerId.Location = new System.Drawing.Point(208, 23);
             this.BoxRetailerId.Name = "BoxRetailerId";
             this.BoxRetailerId.ReadOnly = true;
             this.BoxRetailerId.Size = new System.Drawing.Size(187, 30);
@@ -176,7 +182,7 @@
             // BoxRetailerName
             // 
             this.BoxRetailerName.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxRetailerName.Location = new System.Drawing.Point(218, 87);
+            this.BoxRetailerName.Location = new System.Drawing.Point(208, 67);
             this.BoxRetailerName.Name = "BoxRetailerName";
             this.BoxRetailerName.Size = new System.Drawing.Size(187, 30);
             this.BoxRetailerName.TabIndex = 4;
@@ -185,7 +191,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(22, 238);
+            this.label10.Location = new System.Drawing.Point(12, 218);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(85, 23);
             this.label10.TabIndex = 3;
@@ -195,7 +201,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(19, 286);
+            this.label7.Location = new System.Drawing.Point(9, 266);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(75, 23);
             this.label7.TabIndex = 3;
@@ -205,7 +211,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(22, 190);
+            this.label9.Location = new System.Drawing.Point(12, 170);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(63, 23);
             this.label9.TabIndex = 3;
@@ -215,7 +221,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(19, 141);
+            this.label6.Location = new System.Drawing.Point(9, 121);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(80, 23);
             this.label6.TabIndex = 3;
@@ -225,7 +231,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(19, 94);
+            this.label2.Location = new System.Drawing.Point(9, 74);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(135, 23);
             this.label2.TabIndex = 3;
@@ -235,7 +241,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(19, 46);
+            this.label1.Location = new System.Drawing.Point(9, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 23);
             this.label1.TabIndex = 3;
@@ -325,19 +331,26 @@
             this.GridRetailer.TabIndex = 8;
             this.GridRetailer.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridRetailer_CellClick);
             // 
-            // CBoxPriority
+            // panel6
             // 
-            this.CBoxPriority.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBoxPriority.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CBoxPriority.FormattingEnabled = true;
-            this.CBoxPriority.Items.AddRange(new object[] {
-            "High",
-            "Normal",
-            "Low"});
-            this.CBoxPriority.Location = new System.Drawing.Point(218, 284);
-            this.CBoxPriority.Name = "CBoxPriority";
-            this.CBoxPriority.Size = new System.Drawing.Size(187, 29);
-            this.CBoxPriority.TabIndex = 8;
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
+            this.panel6.Controls.Add(this.CBoxPriority);
+            this.panel6.Controls.Add(this.label1);
+            this.panel6.Controls.Add(this.BoxAddress);
+            this.panel6.Controls.Add(this.label2);
+            this.panel6.Controls.Add(this.BoxEmail);
+            this.panel6.Controls.Add(this.label6);
+            this.panel6.Controls.Add(this.BoxContact);
+            this.panel6.Controls.Add(this.label9);
+            this.panel6.Controls.Add(this.BoxRetailerId);
+            this.panel6.Controls.Add(this.label7);
+            this.panel6.Controls.Add(this.BoxRetailerName);
+            this.panel6.Controls.Add(this.label10);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(10, 10);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(404, 314);
+            this.panel6.TabIndex = 9;
             // 
             // RetailerForm
             // 
@@ -355,9 +368,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GridRetailer)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -388,5 +402,6 @@
         private ReaLTaiizor.Controls.ForeverButton BtnInsertRetailer;
         private System.Windows.Forms.DataGridView GridRetailer;
         private System.Windows.Forms.ComboBox CBoxPriority;
+        private System.Windows.Forms.Panel panel6;
     }
 }
